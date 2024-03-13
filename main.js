@@ -1,1 +1,1 @@
-alert (Gay)
+alert ('Gay')
