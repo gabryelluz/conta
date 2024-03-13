@@ -1,3 +1,3 @@
 alert ('Gay')
 
-prompt ('Qual seu nome?')
+let nomeUsuario = prompt ('Qual seu nome?')
