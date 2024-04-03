@@ -1,0 +1,1 @@
+const botões = document.querySelectorAll('.Objetivos');
