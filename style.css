@@ -19,7 +19,7 @@ h2{
 }
 
 .ativo{
-    background-color: aqua;
-    color: blue;
-    border-bottom: 3px solid green;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
 }
