@@ -9,6 +9,11 @@ span {
 }
 
 h2{
-    background-color: bisque;
     text-align: center;
+}
+
+.Objetivos{
+    color: beige;
+    padding: 20px;
+    font-size: 19px;
 }
