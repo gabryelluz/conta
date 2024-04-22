@@ -23,3 +23,12 @@ h2{
     color: rgb(0, 0, 0);
     border-bottom: 3px solid rgb(0, 0, 0);
 }
+
+.aba-conteudo{
+    display: none;
+    color: blue;
+}
+
+.ativa{
+    display: block;
+}
