@@ -18,12 +18,11 @@ for(let i = 0; i < botoes.length; i++) {
 
 const contadores = document.querySelectorAll('.contador');
 
-const tempoObjetivo1 = new Date ('');
-const tempoObjetivo2 = new Date ('');
-const tempoObjetivo3 = new Date ('');
-const tempoObjetivo4 = new Date ('');
+const tempoObjetivo1 = new Date ('2024-11-12T00:00:00');
+const tempoObjetivo2 = new Date ('Depende da graduação');
+const tempoObjetivo3 = new Date ('Só encerraremos nossa carreira quando aposentarmo-nos');
 
-let tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
+let tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3];
 
 for(let i = 0; i < contadores.length; i++){
     contadores[i].textContent =calculaTempo(tempos[i]);
