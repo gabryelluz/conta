@@ -16,6 +16,8 @@ for(let i = 0; i < botoes.length; i++) {
 //botoes[i].classList.remove('ativo');
 }
 
+const visão = document.querySelector('.descricao')
+
 const contadores = document.querySelectorAll('.contador');
 
 const tempoObjetivo1 = new Date ('2024-11-12T00:00:00');
