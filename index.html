@@ -1,59 +1,45 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decentes</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <h2>Olá, <span>seja bem vindo!</span></h2>
-
-    <a href="main.js">Arquivo do Nome</a>
-
-    <section class="Contagem">
-        <button class="Objetivos">Visão de futuro</button>
-        <button class="Objetivos">Ensino médio</button>
-        <button class="Objetivos">Graduação</button>
-        <button class="Objetivos">Carreira</button>
-
-        <div class="aba-texto">
-            <div class="aba-conteudo">
-                <h3>
-                    Descrição do Objetivo: <span class="Nome">Visão de futuro</span>
-                </h3>
-                <h2>Declarções:</h2>
-                <div class="descricao"></div>
-            </div>
-            <div class="aba-conteudo ativa">
-                <h3>
-                    Descrição do Objetivo: <span class="Nome">Ensino médio</span>
-                </h3>
+<header>
+    <h1>PROJETO</h1>
+    <p class="project-info">Projeto da aula 13/03</p>
+    <ul class="contributors">
+        <li><span>Matheus Erick</span>, N°: 30</li>
+        <li><span>Isabelli Dela Coleta</span>, N°: 42</li>
+        <li><span>Sérgio Henrique da Cunha Calazans</span>, N°:35</li>
+    </ul>
+</header>
+<main>
+    <h2>Seja bem-vindo <span id="username"></span></h2>
+    <!-- Seção de Objetivos -->
+    <section class="objectives-section">
+        <!-- Botões dos Objetivos -->
+        <div class="objectives-buttons">
+            <button class="objective-button active" data-target="goal1">Conseguir um emprego - Matheus</button>
+            <button class="objective-button" data-target="goal2">Passar no Vestibular - Sérgio</button>
+            <button class="objective-button" data-target="goal3">Iniciar meu curso - Isabelli</button>
+            <button class="objective-button" data-target="goal4">Formados</button>
+        </div>
+        <!-- Conteúdo dos Objetivos -->
+        <div class="objectives-content">
+            <div id="goal1" class="objective-content active">
+                <h3>Correr atrás de vagas</h3>
                 <h2>Tempo para completar o objetivo:</h2>
-                <div class="contador"></div>
+                <div class="counter"></div>
+            </div>
+            <div id="goal2" class="objective-content">
+                <h3>Estudando as disciplinas e conteúdos</h3>
+                <h2>Tempo para completar o objetivo:</h2>
+                <div class="counter"></div>
+            </div>
+            <div id="goal3" class="objective-content">
+                <h3>Objetivo 3</h3>
+                <h2>Tempo para completar o objetivo:</h2>
+                <div class="counter"></div>
+            </div>
+            <div id="goal4" class="objective-content">
+                <h3>Objetivo 4</h3>
+                <h2>Tempo para completar o objetivo:</h2>
+                <div class="counter"></div>
             </div>
         </div>
-        <div class="aba-conteudo ">
-            <h3>
-                Descrição do Objetivo: <span class="Nome">Graduação</span>
-            </h3>
-            <h2>Tempo para completar o objetivo:</h2>
-            <div class="contador"></div>
-        </div>
-
-        <div class="aba-conteudo ">
-            <h3>
-                Descrição do Objetivo: <span class="Nome">Carreira</span>
-            </h3>
-            <h2>Tempo para completar o objetivo:</h2>
-            <div class="contador"></div>
-
     </section>
-
-    <script src="cont.js"></script>
-</body>
-
-</html>
+</main>

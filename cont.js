@@ -1,51 +1,65 @@
-const botoes = document.querySelectorAll('.objetivos');
-const texto = document.querySelectorAll('.aba-conteudo');
-// botoes.lenght
+// Mensagem de boas-vindas
+alert('Bem-vindo pessoal');
 
-for(let i = 0; i < botoes.length; i++) {
-    console.log(i); 
-        botoes[i].onclick = function(){
-            for(let j = 0; j< botoes.length; j++){
-                botoes[j].classList.remove('ativo');
-                texto[j].classList.remove('ativa');
-            }
-        botoes[i].classList.add('ativo');
-        texto[i].classList.add('ativa');
-      
-        }
-//botoes[i].classList.remove('ativo');
+// Definição do nome do usuário
+let username = document.querySelector('#username');
+let user = prompt("Qual o seu nome?");
+
+if (user === null || user === '') {
+    username.textContent = "Usuário";
+} else {
+    username.textContent = user;
 }
 
-const visão = document.querySelector('.descricao')
+console.log("Nome do usuário: " + user);
 
-const contadores = document.querySelectorAll('.contador');
+// Contadores de tempo para os objetivos
+const counters = document.querySelectorAll('.counter');
 
-const tempoObjetivo1 = new Date ('2024-11-12T00:00:00');
-const tempoObjetivo2 = new Date ('Depende da graduação');
-const tempoObjetivo3 = new Date ('Só encerraremos nossa carreira quando aposentarmo-nos');
+const goalDates = [
+    new Date('2024-04-26T00:00:00'),
+    new Date('2025-01-17T00:00:00'),
+    new Date('2024-12-17T00:00:00'),
+    new Date('2024-12-13T00:00:00')
+];
 
-let tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3];
-
-for(let i = 0; i < contadores.length; i++){
-    contadores[i].textContent =calculaTempo(tempos[i]);
+// Atualiza os contadores de tempo
+function updateCounters() {
+    goalDates.forEach((goalDate, index) => {
+        counters[index].textContent = calculateTimeRemaining(goalDate);
+    });
 }
 
-function calculaTempo(tempoObjetivo){
-    let tempoAtual = new Date ();
-    let tempoFinal = tempoObjetivo - tempoAtual;
+// Calcula o tempo restante para o objetivo
+function calculateTimeRemaining(goalDate) {
+    let currentTime = new Date();
+    let timeRemaining = goalDate - currentTime;
 
-    let segundos = Math.floor(tempoFinal/1000);
-    let minutos = Math.floor(segundos/60);
-    let horas = Math.floor(minutos/60);
-    let dias = Math.floor(horas/24);
+    let seconds = Math.floor(timeRemaining / 1000);
+    let minutes = Math.floor(seconds / 60);
+    let hours = Math.floor(minutes / 60);
+    let days = Math.floor(hours / 24);
 
-    segundos %= 60;
-    minutos %= 60;
-    horas %= 24;
+    seconds %= 60;
+    minutes %= 60;
+    hours %= 24;
 
-
-                                                                            
-
-    return `${dias} Dias ${horas} Horas ${minutos} Minutos ${segundos} Segundos`;
-
+    return `${days} Dias ${hours} Horas ${minutes} Minutos ${seconds} Segundos`;
 }
+
+// Atualiza os contadores a cada segundo
+setInterval(updateCounters, 1000);
+
+// Adiciona eventos aos botões de objetivo
+const objectiveButtons = document.querySelectorAll('.objective-button');
+const objectiveContents = document.querySelectorAll('.objective-content');
+
+objectiveButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        objectiveButtons.forEach(btn => btn.classList.remove('active'));
+        objectiveContents.forEach(content => content.classList.remove('active'));
+
+        button.classList.add('active');
+        objectiveContents[index].classList.add('active');
+    });
+});
