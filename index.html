@@ -1,45 +1,57 @@
-<header>
-    <h1>PROJETO</h1>
-    <p class="project-info">Projeto da aula 13/03</p>
-    <ul class="contributors">
-        <li><span>Matheus Erick</span>, N°: 30</li>
-        <li><span>Isabelli Dela Coleta</span>, N°: 42</li>
-        <li><span>Sérgio Henrique da Cunha Calazans</span>, N°:35</li>
-    </ul>
-</header>
-<main>
-    <h2>Seja bem-vindo <span id="username"></span></h2>
-    <!-- Seção de Objetivos -->
-    <section class="objectives-section">
-        <!-- Botões dos Objetivos -->
-        <div class="objectives-buttons">
-            <button class="objective-button active" data-target="goal1">Conseguir um emprego - Matheus</button>
-            <button class="objective-button" data-target="goal2">Passar no Vestibular - Sérgio</button>
-            <button class="objective-button" data-target="goal3">Iniciar meu curso - Isabelli</button>
-            <button class="objective-button" data-target="goal4">Formados</button>
-        </div>
-        <!-- Conteúdo dos Objetivos -->
-        <div class="objectives-content">
-            <div id="goal1" class="objective-content active">
-                <h3>Correr atrás de vagas</h3>
-                <h2>Tempo para completar o objetivo:</h2>
-                <div class="counter"></div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html" class="linksmenu">
+                HOME
+            </a>
+            <a href="sobrenos.html" class="linksmenu">
+                SOBRE NÓS
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section id="introducao">
+            <div>
+                <p>Somos do Colégio Estadual do Paraná e elaboramos esta página tendo por fim exprimir uma contagem
+                    regressiva da realização dos nosso objetivos.</p>
             </div>
-            <div id="goal2" class="objective-content">
-                <h3>Estudando as disciplinas e conteúdos</h3>
-                <h2>Tempo para completar o objetivo:</h2>
-                <div class="counter"></div>
+        </section>
+        <section>
+            <div id="contadores">
+                <button class="objetivos">
+                    Carlos: graduação em ciencias contábeis
+                </button>
+                <button class="objetivos">
+                    Lucas: graduação em Psicologia
+                </button>
+                <button class="objetivos">
+                    Gabryel: graduação em medicina
+                </button>
             </div>
-            <div id="goal3" class="objective-content">
-                <h3>Objetivo 3</h3>
-                <h2>Tempo para completar o objetivo:</h2>
-                <div class="counter"></div>
+            <div id="textos">
+                <p>Tempo para completar cada graduação, tendo em que vista que vamos todos principiar nosso curso no
+                    início do ano 2025:</p>
+                <div class="prazo-obetivos"></div>
+                <div class="prazo-obetivos"></div>
+                <div class="prazo-obetivos"></div>
             </div>
-            <div id="goal4" class="objective-content">
-                <h3>Objetivo 4</h3>
-                <h2>Tempo para completar o objetivo:</h2>
-                <div class="counter"></div>
-            </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
+    <footer>
+        Colégio Estadual do Paraná
+    </footer>
+    
+    <script src="cont.js"></script>
+</body>
+
+</html>
