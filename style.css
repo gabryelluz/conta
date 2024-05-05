@@ -1,0 +1,22 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+}
+
+main {
+    text-align: center;
+}
+
+#introducao {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+
