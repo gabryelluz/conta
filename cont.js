@@ -1,5 +1,5 @@
 const botoes = document.querySelectorAll('.objetivos');
-const texto = document.querySelectorAll('.prazo-objetivos');
+const texto = document.querySelectorAll('#textos');
 // botoes.lenght
 
 for(let i = 0; i < botoes.length; i++) {
@@ -16,7 +16,7 @@ for(let i = 0; i < botoes.length; i++) {
 //botoes[i].classList.remove('ativo');
 }
 
-const contadores = document.querySelectorAll('.contadores');
+const contadores = document.querySelectorAll('.prazo-objetivos');
 
 const tempoObjetivo1 = new Date ('2028-12-21T00:00:00');
 const tempoObjetivo2 = new Date ('2028-12-21T00:00:00');
