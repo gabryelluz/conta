@@ -80,4 +80,5 @@ footer {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 300;
+    backdrop-filter: blur(10px);
 }
