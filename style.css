@@ -55,12 +55,9 @@ main {
     padding: 4px 12px;
     margin: 5px;
     border: none;
-    /* Cor do contorno do botão */
     border-radius: 5px;
     background-color: #8e8e8e;
-    /* Cor de fundo do botão */
     color: #e4f2ff;
-    /* Cor do texto do botão */
     font-size: 12px;
     font-weight: bold;
     text-align: left;
