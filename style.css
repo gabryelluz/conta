@@ -10,6 +10,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+
 header {
     background: linear-gradient(to right, #3a3a3a, #707070);
     ;
@@ -45,7 +46,12 @@ main {
     text-align: justify;
 }
 
+#contadores {
+    display: flex;
+}
+
 .objetivos {
+    width: 100%;
     padding: 4px 12px;
     margin: 5px;
     border: none;
@@ -57,12 +63,21 @@ main {
     /* Cor do texto do botão */
     font-size: 12px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     text-align: center;
+    padding: 17px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
 }
