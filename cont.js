@@ -1,6 +1,5 @@
 const botoes = document.querySelectorAll('.objetivos');
 const texto = document.querySelectorAll('.textos');
-// botoes.lenght
 
 for(let i = 0; i < botoes.length; i++) {
     console.log(i); 
@@ -13,7 +12,6 @@ for(let i = 0; i < botoes.length; i++) {
         texto[i].classList.add('ativa');
       
         }
-//botoes[i].classList.remove('ativo');
 }
 
 const contadores = document.querySelectorAll('.prazo-objetivos');
