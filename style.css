@@ -8,8 +8,8 @@ body {
     background-image: linear-gradient(to bottom right, #626262, #758586);
     color: #e4f2ff;
     font-family: "Montserrat", sans-serif;
+    cursor: default;
 }
-
 
 header {
     background: linear-gradient(to right, #3a3a3a, #707070);
