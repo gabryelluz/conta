@@ -3,6 +3,12 @@ body {
     margin: 0;
     height: 100vw;
     width: 100vw;
+    background-image: linear-gradient(to bottom right, #626262, #758586);
+    color: #e4f2ff;
+}
+
+header {
+     background: linear-gradient(to right, #3a3a3a, #707070);;
 }
 
 nav {
@@ -14,7 +20,8 @@ nav {
 a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #939315;
+    color: #e4f2ff;
+    letter-spacing: 8px;
 
 }
 
@@ -40,9 +47,9 @@ main {
     border: none;
     /* Cor do contorno do botão */
     border-radius: 5px;
-    background-color: #5a5a5a;
+    background-color: #8e8e8e;
     /* Cor de fundo do botão */
-    color: #fff;
+    color: #e4f2ff;
     /* Cor do texto do botão */
     font-size: 12px;
     font-weight: bold;
