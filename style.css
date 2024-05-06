@@ -69,6 +69,10 @@ main {
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
+.textos {
+    display: none;
+}
+
 footer {
     position: fixed;
     bottom: 0;

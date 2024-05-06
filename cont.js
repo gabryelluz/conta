@@ -1,5 +1,5 @@
 const botoes = document.querySelectorAll('.objetivos');
-const texto = document.querySelectorAll('.parte_textos');
+const texto = document.querySelectorAll('.textos');
 // botoes.lenght
 
 for(let i = 0; i < botoes.length; i++) {
@@ -18,9 +18,10 @@ for(let i = 0; i < botoes.length; i++) {
 
 const contadores = document.querySelectorAll('.prazo-objetivos');
 
-const tempoObjetivo1 = new Date ('2028-12-21T00:00:00');
-const tempoObjetivo2 = new Date ('2028-12-21T00:00:00');
-const tempoObjetivo3 = new Date ('2030-12-21T00:00:00');
+const tempoObjetivo1 = new Date ('2024-04-26T00:00:00');
+const tempoObjetivo2 = new Date ('2025-01-17T00:00:00');
+const tempoObjetivo3 = new Date ('2024-12-17T00:00:00');
+const tempoObjetivo4 = new Date ('2024-12-13T00:00:00');
 
 let tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3];
 
@@ -39,7 +40,8 @@ function calculaTempo(tempoObjetivo){
 
     segundos %= 60;
     minutos %= 60;
-    horas %= 24;
+    horas %= 24;                                                             
 
     return `${dias} Dias ${horas} Horas ${minutos} Minutos ${segundos} Segundos`;
+
 }
