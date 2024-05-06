@@ -14,7 +14,7 @@ nav {
 a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #939315
+    color: #939315;
     
 }
 
@@ -27,6 +27,26 @@ main {
     text-align: justify;
     width: 50%;
     padding: 10px 5px;
+}
+
+#desenvolvimento {
+    width: 50%;
+    text-align: justify;
+}
+
+.objetivos {
+  padding: 3px 10px;
+    margin: 5px;
+  border: 2px solid ##c2c200; /* Cor do contorno do botão */
+  border-radius: 5px;
+  background-color: #939315; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 footer {
