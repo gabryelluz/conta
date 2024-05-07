@@ -83,3 +83,11 @@ footer {
     font-weight: 300;
     backdrop-filter: blur(10px);
 }
+
+.ativa {
+    display: block;
+}
+
+.ativo {
+    background-color: aquamarine;
+}
